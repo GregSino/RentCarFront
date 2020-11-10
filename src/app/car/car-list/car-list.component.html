@@ -1,0 +1,45 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Cars</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Color</th>
+        <th>Matriculation</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let car of cars | async">
+        <td>{{car.carId}}</td>
+        <td>{{car.brand}}</td>
+        <td>{{car.model}}</td>
+        <td>{{car.color}}</td>
+        <td>{{car.matriculation}}</td>
+        <td>
+          <div class="edit-button-row">
+            <button mat-raised-button color="primary" (click)="carDetails(car.carId)">Details</button>
+            <button mat-raised-button color="accent" (click)="updateCar(car.carId, car)" >Update</button>
+            <button mat-raised-button color="warn" (click)="deleteCar(car.carId)" >Delete</button>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <hr>
+    <div class="row">
+      <div class="col-6 col-s-12">
+        <div class="card">
+          <div class="card-body">
+            <app-car-create (majListCars)="reloadData()"></app-car-create>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

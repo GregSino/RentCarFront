@@ -1,27 +1,116 @@
-# RentCarFront
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+  <h3 align="center">Spring boot Api with Hibernate, connected by REST with Front api </h3>
 
-## Development server
+  <p align="center">
+    No database needed, develop with only free solutions!
+    <br />
+    <a href="https://github.com/GregSino/RentCarFront"><strong>Don't forget to get the back office! »</strong></a>
+    <br />
+    <a href="https://github.com/GregSino/RentCarFront"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/GregSino/RentCarFront">View Demo</a>
+    ·
+    <a href="https://github.com/GregSino/RentCarFront/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/GregSino/RentCarFront/issues">Request Feature</a>
+  </p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#front-prerequisites)
+  * [Installation](#front-prerequisites-simplified-install)
+* [License](#license)
+* [Contact](#contact)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+There are many great api built with Spring boot available on GitHub. however, I didn't find one that really suit my needs so I created this enhanced one. I want to create not one but two api connected by rest, to manage a many to many relationship.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Here's the project:
+* The back-office developed with Spring boot / Maven / hibernate. No database is needed, this project use H2-Memory. 
+* The front-office developed with Angular / Material / Bootstrap. 
 
-## Further help
+The idea is to develop a simple CRUD between 3 entities:
+* A driver list
+* A car list
+* A rent list composed of drivers and cars
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Built With
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* [Spring boot](https://spring.io/)
+* [Hibernate](https://hibernate.org/)
+* [Angular](https://angular.io/)
+* [Angular Material](https://material.angular.io/)
+* [Bootstrap](https://getbootstrap.com/)
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To develop this project, I've used IntelliJ for the back and Webstorm for the front. You can easilly use other IDE but it's a good idea to use 2 programs to run and test the api in real time.
+
+### Front Prerequisites
+
+As usual, don't forget to install Node.js. Then, you need to install Angular
+* npm
+```sh
+npm install @angular/cli
+```
+
+It'll be necessary to install also Bootstrap...
+* npm
+```sh
+npm install bootstrap --save
+```
+
+... Jquery
+* npm
+```sh
+npm install jquery --save
+```
+
+... and finally Popper.js
+* npm
+```sh
+npm install popper.js --save
+```
+
+### Front Prerequisites simplified install
+
+1. Clone the repo
+```sh
+git clone https://github.com/your_username_/Project-Name.git
+```
+2. Install NPM packages
+```sh
+npm install
+```
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Greg Sino - gregsino@gmail.com
+
+Project Link: [https://github.com/GregSino/RentCarFront](https://github.com/GregSino/RentCarFront)
+
+
+

@@ -1,0 +1,15 @@
+<h2>Driver informations</h2>
+
+<hr/>
+<div *ngIf="driver">
+  <div>
+    <label><b>Prénom : </b></label> {{driver.firstName}}
+  </div>
+  <div>
+    <label><b>Nom : </b></label> {{driver.lastName}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Return to the drivers list</button><br>

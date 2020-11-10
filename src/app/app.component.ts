@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'rentCarFront';
+  title = 'rent Car with Spring boot, Hibernate, REST & Angular';
 }

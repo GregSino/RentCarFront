@@ -1,0 +1,15 @@
+<h3>Add driver</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">First name</label>
+      <input [(ngModel)]="driver.firstName" class="form-control" id="firstName" name="firstName" required type="text">
+
+      <label for="lastName">Last name</label>
+      <input [(ngModel)]="driver.lastName" class="form-control" id="lastName" name="lastName" required type="text">
+    </div>
+
+    <button class="btn btn-secondary" type="submit" >Add this driver</button>
+  </form>
+</div>
+

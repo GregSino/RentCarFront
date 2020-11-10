@@ -1,0 +1,15 @@
+<h2>Rent informations</h2>
+
+<hr/>
+<div *ngIf="rent">
+  <div>
+    <label><b>Driver : </b></label> {{rent.drivers}}
+  </div>
+  <div>
+    <label><b>Car : </b></label> {{rent.cars}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Return to the rents list</button><br>

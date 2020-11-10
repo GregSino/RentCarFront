@@ -1,0 +1,16 @@
+<h3>Rent update</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="driver">Driver</label>
+      <input [(ngModel)]="rent.driver" class="form-control" id="driver" name="driver" required type="text">
+    </div>
+
+    <div class="form-group">
+      <label for="car">Car</label>
+      <input [(ngModel)]="rent.car" class="form-control" id="car" name="car" required type="text">
+    </div>
+
+    <button class="btn btn-success" type="submit">Update</button>
+  </form>
+</div>

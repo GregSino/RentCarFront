@@ -1,0 +1,26 @@
+<div style="width: 400px;">
+  <form #f="ngForm" (ngSubmit)="onSubmit()">
+    <mat-card>
+      <mat-card-title>Add rent</mat-card-title>
+      <mat-card-content>
+        <mat-form-field>
+          <mat-select placeholder="Driver" [(value)]="driver">
+            <mat-option *ngFor="let driver of drivers | async" [value]="driver.valueOf()">
+              {{driver.firstName}} {{driver.lastName}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-select placeholder="car" [(value)]="car">
+            <mat-option *ngFor="let car of cars | async" [value]="car.valueOf()">
+              {{car.brand}} {{car.model}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" type="submit">Add</button>
+        </mat-card-actions>
+      </mat-card-content>
+    </mat-card>
+  </form>
+</div>

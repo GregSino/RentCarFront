@@ -1,0 +1,31 @@
+section {
+  display: table;
+}
+
+.edit-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.edit-button-row {
+  display: table-cell;
+  width: 490px;
+}
+
+.edit-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.edit-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.edit-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
